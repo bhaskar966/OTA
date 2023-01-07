@@ -5,6 +5,10 @@ nuke miui cam
 Clean sync
 OTA enabled
 kernel: switch to Aghisna Kernel
+nuke libhidl
+nuke libpiex_shim
+sync Aperture cam from LOS
+sync hardware/xiaomi from LOS
 sm6150-common: props: Don't write binary XML files
 sm6150-common: props: Enable zygote preforking
 sm6150-common: props: Enable QCRIL radio power saving
