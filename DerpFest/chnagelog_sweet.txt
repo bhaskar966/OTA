@@ -1,3 +1,7 @@
+====================
+    01-07-2023     
+====================
+
 *Overall Changes [bhaskar966]
 
 Revert all previous changes
@@ -19,11 +23,6 @@ sm6150-common: props: Add few props for performance
 sm6150-common: overlay: Improve UI Smoothness
 sm6150-common: wifi: Switch gEnablePowerSaveOffload to 5
 sweet: overlay: Configure additional camera framerates
-
-
-====================
-    01-07-2023     
-====================
 
 * packages/apps/Aperture
 c313c1b  Aperture: Override LocationListener methods w/o defaults for pre-R API>
