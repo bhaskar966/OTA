@@ -4,6 +4,7 @@ Revert all previous changes
 nuke miui cam
 Clean sync
 OTA enabled
+kernel: switch to Aghisna Kernel
 sm6150-common: props: Don't write binary XML files
 sm6150-common: props: Enable zygote preforking
 sm6150-common: props: Enable QCRIL radio power saving
