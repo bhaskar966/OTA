@@ -1,4 +1,4 @@
-*device [bhaskar966]
+*Overall Changes [bhaskar966]
 
 Revert all previous changes
 nuke miui cam
