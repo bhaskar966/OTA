@@ -4,7 +4,6 @@ Revert all previous changes
 nuke miui cam
 Clean sync
 OTA enabled
-kernel: switch to Aghisna Kernel
 nuke libhidl
 nuke libpiex_shim
 sync Aperture cam from LOS
