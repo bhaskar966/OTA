@@ -1,4 +1,492 @@
 ====================
+    02-17-2023     
+====================
+
+**Device Side
+sweet: Update the s5kgw3 camera libraries from MIUI V13.0.9.0.SKFINXM
+sweet: Drop xiaomi touchfeature hal
+sweet: overlay: Disable battery light settings 
+sweet: overlay: cancel FP operation if not idle
+sweet: Update blobs from sweet V13.0.17.0.SKFEUXM 
+sweet: overlay: Migrate "rounded_corner_content_padding"
+sweet: overlay: Increase status_bar_padding_top
+sweet: sepolicy: Allow hal_displayfeature_xiaomi_default to write
+sweet: Switch to vantom and playground 16 clang
+sweet: overlay: Adjust status bar round corner
+sweet: Derp it 
+sweet : Move to common libhidl
+Dolby: Remove duplicate in manifest
+sm6150-common: wifi: tune bmps listening interval
+sm6150-common: gps: Update to LA.UM.9.1.r1-13000-SMxxx0.QSSI13.0
+sm6150-common: dolby: Add dolby mediacodecs support
+sm6150-common: sepolicy: Allow system suspend to read sysfs dir 
+sm6150-common: sepolicy: add permission to request health/sensor data 
+sm6150-common: Remove references to a2dp module
+sm6150-common: Remove AUDIO_FEATURE_ENABLED_PROXY_DEVICE
+sm6150-common: Drop custom APM flag along with no-op audio flags
+sm6150-common: prop: Compact cached app heaps in the background 
+sm6150-common: Pin Dirac blobs
+sm6150-common: manifest: Add missing vintf entries
+sm6150-common: Drop component overrides
+sm6150-common: Deduplicate handheld_core_hardware.xml copy rule
+sm6150-common: Unpin updatable-media from memory 
+sm6150-common: Update telephony package list to LA.QSSI.12.0.r1-05600-qssi.0
+sm6150-common: Move ueventd.qcom.rc to /vendor/etc. 
+sm6150-common: hwc: Disable SF composition prediction model.
+sm6150-common: media: Add swap width and height feature
+sm6150-common: media: Fix VTS issue. 
+sm6150-common: sepolicy: Address some denials
+sm6150-common : Derp it 
+sm6150-common : Switch to Vantom Kernel and playground clang
+*vendor
+sweet: Update the s5kgw3 camera libraries from MIUI V13.0.9.0.SKFINXM 
+sweet: Drop xiaomi touchfeature hal
+sm6150-common: Update blobs from sweet V13.0.17.0.SKFEUXM 
+sweet: Update blobs from sweet V13.0.17.0.SKFEUXM
+sm6150-common: Import missing dirac blobs
+
+**Source side
+Changed Updater to https://github.com/bhaskar966/derp_packages_apps_Updater
+configured to make ota json for Unofficial device.
+
+====================
+    02-16-2023     
+====================
+
+* packages/apps/Settings
+8539919  Settings: Fix misspellings in German translation  [NurKeinNeid]
+
+
+====================
+    02-15-2023     
+====================
+
+* vendor/derp
+f0ffc1d  Revert "derp: Introduce Flipendo ( Extreme Battery Saver )"  [NurKeinNeid]
+
+
+* vendor/gms
+047c788  Update PixelSetupWizard strings overlay  [Pulkit077]
+
+
+====================
+    02-14-2023     
+====================
+
+* frameworks/base
+80dcdd3  Battery Style Improvements  [Trishiraj]
+397d7a1  Battery bolt: Preserve unicode bolt color  [Trishiraj]
+a54912f  Battery: make fill path rounded  [Evillium]
+c36338d  Battery Styles: Fix landscape battery size  [Pranav Vashi]
+81d5ff9  Battery Styles: Re-evaluate system theme on QS battery location change  [Pranav Vashi]
+237715e  ThemeOverlayController: Remove repeated monet check  [Pranav Vashi]
+1c83476  Battery Styles: Hide plus when showing battery percentage inside icon  [Christian Oder]
+0bf9a95  Battery Styles: Fix percentage view on landscape battery  [Pranav Vashi]
+d3ad44c  BatteryMeterView: Move null check to the beginning of the method.  [spezi77]
+e86888d  Battery Styles: Allow setting percent view on left [1/2]  [703joko]
+8c7842b  Battery Styles: Introduce Battery Landscape [1/2]  [703joko]
+8860fdb  Battery Styles: Add customization for QS  [Pranav Vashi]
+a6928d9  Battery Styles: Fix signal icon padding with Hidden style  [Ezio Lacandia Bijelkic]
+3319237  Battery Styles: Show a bolt ⚡ when charging  [ezio84]
+9083759  Battery Styles: Introduce full circle battery style  [Christian Oder]
+9ef6669  Battery Styles: Readd dotted Circle to Kotlin impl  [Christian Oder]
+366720e  Battery Styles: Clean up for more customizations  [Pranav Vashi]
+eb2255f  Revert "BatteryMeterView: Show a bolt ⚡when charging"  [NurKeinNeid]
+746fd3a  SystemUI: Improve fp ripple animation color  [minaripenguin37]
+cb767b4  SystemUI: Apply monet to fingerprint authentication ripple animation  [SagarMakhar]
+33ee851  keyguard: Actually kill Fancy Colon  [Joe Maples]
+69cb540  SystemUI: Improve vertical QS tile layout & animation  [timjosten]
+c4e4935  SystemUI: Tune QS tile dimensions  [strwbrry143]
+3b77995  BoostFramework: Kill logcat spam on devices without QPerformance  [xyyx]
+99c0eb8  OverScroller: Import BoostFramework.ScrollOptimizer  [chrisl7]
+5ee4de3  Filter multi-layer cases for pre-rendering  [Jun Wang]
+69e99d5  perf: Add lock protection for initialization in ScrollOptimizer  [Jun Wang]
+8b33c3a  core: Port CLO's Framework Boost  [Akash Srivastava]
+
+
+* packages/apps/DerpSpace
+13b723f  DerpSpace: Battery Styles: Add customization for QS [2/2]  [Pranav Vashi]
+e556fb4  DerpSpace: Allow setting battery percent view on left [2/2]  [703joko]
+08fa05a  DerpSpace: Battery Styles: Introduce Battery Landscape [2/2]  [703joko]
+47986d0  DerpSpace: Battery Styles: Add customizations for Android 13  [Parth Bhatia]
+7d78cfe  Revert "DerpSpace: Bring back battery icon options"  [NurKeinNeid]
+
+
+* packages/modules/Permission
+c693e0b  PermissionController: Always enable location accuracy feature  [Adithya R]
+
+
+====================
+    02-13-2023     
+====================
+
+* device/derp/sepolicy
+b27967d  sepolicy: Allow settings app to use trust hal  [Erfan Abdi]
+2a83d4d  sepolicy: Label persist.sys.global.cleartext and let system_server set it  [Chirayu Desai]
+
+
+* packages/apps/Aperture
+f84aec2  Merge branch 'lineage-20.0' of https://github.com/LineageOS/android_packages_apps_Aperture into HEAD  [NurKeinNeid]
+
+
+* packages/apps/DerpLauncher
+bb42b0f  DerpLauncher: fix second screen launcher crash  [nift4]
+
+
+* packages/apps/Settings
+766c2d7  Settings: Show SoC Model rather than value of ro.board.platform if available  [Tim Zimmermann]
+795739b  Settings: Align TotalRAMPreferenceController with MemoryUsagePreferenceController from dev settings  [Tim Zimmermann]
+178b39f  Settings: Add platform and RAM to Model & Hardware  [Rashed Abdel-Tawab]
+c8b4eea  Settings: CustomScreenResolution: Update RESOLUTION_METRIC_SETTING_KEY  [AnierinB]
+98666fb  Settings: Allow disabling color inversion support [2/2]  [Ido Ben-Hur]
+acd22c4  Settings: Change default Ambient Edge settings  [chandu078]
+6b70c93  fixup! Settings: Use SystemSettingSeekBarPreference instead of CustomSeekBarPreference  [NurKeinNeid]
+4e8e464  Settings: Use SystemSettingSeekBarPreference instead of CustomSeekBarPreference  [chandu078]
+c334a7b  Settings: Ambient Pulse Light: add layout style for top n bottom [2/2]  [SuperDroidBond]
+d8657b9  Settings: Add light width [2/2]  [Michele Bono]
+eadc2dc  Settings: Ambient Edge Pulse style [2/2]  [AnkitGourav]
+28b33df  Settings: Add reverse animation direction [2/2]  [AnkitGourav]
+b45313b  Settings: Pulse edge light for all doze triggers [2/2]  [Ido Ben-Hur]
+3c8cb72  Settings: Improve Ambient edge lightning toggle  [cjh1249131356]
+c908be8  Settings: Only allow edge lights on AOD when AOD is enabled [2/2]  [Ido Ben-Hur]
+c218e71  Settings: Add ambient edge lightning settings [1/2]  [Ido Ben-Hur]
+e021339  Settings: Optional haptic feedback on back gesture [2/2]  [DennySPb]
+5ecdaa7  Settings: Follow Accent color on search button  [StarkDroid]
+9608b23  Settings: Add restart systemui shortcut to power menu [2/2]  [NurKeinNeid]
+94935f3  Settings: Fix layout battery UsageView  [kleidione Freitas]
+4c5730a  display: Add custom screen resolution setting  [Luofan Chen]
+77dd2c6  Settings: fix typo in settings namespace for qr scanner on ls  [maxwen]
+0f03851  Settings: Hide settings that don't work when taskbar is enabled  [LuK1337]
+0fd15b2  AppDataUsage: Update "Background network access" toggle logic  [Chirayu Desai]
+cbb273d  Use our string for restrict_background  [Chirayu Desai]
+2125256  UserManager unknown source app installation restrictions  [flawedworld]
+a6f4f47  UserManager app installation restrictions  [flawedworld]
+06c681e  Settings: Add support for global cleartext penalties  [Oliver Scott]
+77fd4e6  Global VPN feature [2/2]  [Oliver Scott]
+dd2b53d  Add setting for timeout-reboot  [Chirayu Desai]
+2a56f5b  Security: Add Trust RestrictUsb Preference  [Erfan Abdi]
+b3d673f  Settings: appinfo: Show warning when hiding/unhiding the app  [Aayush Gupta]
+9dc42eb  Improve discoverability of Hidden apps in the Apps list of Settings  [t-m-w]
+fcfba86  Hide app feature  [Oliver Scott]
+8d6cc8c  Settings: Fix data usage display on mobile panel  [maxwen]
+e69dd1c  Settings: MobileDataPanel: Remove VoLTE slice  [Anushek Prasal]
+613bc89  Settings: Add back DataUsageSlice  [Anushek Prasal]
+1181ee5  Settings: panels: Improvements  [Alex]
+be6ade0  Settings: actually fix font for PanelUI  [aswin7469]
+6c8e372  Settings: panels: Add Mobile Data panel  [Joe Maples]
+58b3023  Settings: PowerMenuActions: Disable emergency key if emergency affordance is enabled  [Dhina17]
+74fe5e6  Battery: Show unavailable instead of 0.0℃ for battery temp  [cjh1249131356]
+2e609c0  Battery: show battery temp on power summary  [DennySPB]
+3317ec8  Call CardDatabaseHelper.getInstance() when used and not in onCreate  [Håkan Kvist]
+5473d08  Settings: Avoid enforcing weird backgrounds  [El Dainosor]
+5fae3da  Settings: Add Alarms Blocker [2/2]  [faust93]
+9de311c  Settings: Add Wakelock Blocker [2/2]  [Alex Cruz]
+4b903cb  Settings: Add Default USB Configuration  [ZeNiXxX]
+bf17b96  InstalledApp: Hide GooglePlay icon for webapps  [DarkJoker360]
+75b6b2e  Link location indicators toggle in privacy settings  [Danny Lin]
+144e228  Settings: Improve the German translations for more consistency with stock  [NurKeinNeid]
+77c2c60  Use default letter spacing for category titles  [Danny Lin]
+a663555  Settings: Battery charge warning [2/2]  [Nicolas Dhouailly]
+c061044  AdvancedSoundSettings: Add charging vibration settings  [xyyx]
+3a21f7e  Settings: Ambient Music Ticker - Allow to pulse on new tracks [2/2]  [ezio84]
+1ab3085  Settings: Update wallpaper dashboard summary  [NurKeinNeid]
+5249500  Settings: Re-organize sound settings  [Karan Parashar]
+8523dadb  Settings: Allow disabling clipboard overlay [2/2]  [Adithya R]
+ed556b8  Settings: Expose saved devices fragment via intent  [Adithya R]
+cc6fdfe  PreventRingingParentPreferenceController: Refactor summary generation  [Ido Ben-Hur]
+62b8df9  Settings: Choose which ringer modes to cycle with the gesture [2/2]  [Ido Ben-Hur]
+9a9a7a6  [SQUASH] Settings: Add vibration patterns from OOS with custom vibration patterns [3/3]  [Ido Ben-Hur]
+550c20b  Fix ExtraText lint errors  [Cole Faust]
+5b68b34  Fix incorrect switch status when user stay in NightDisplaySettings page while scheduled night lights on  [Shen Lin]
+10803ec  Fix "show system apps" status lost when switching on/off dark theme  [Shen Lin]
+ced63f4  Add fallback summary text if there is no matching screen timeout value  [Shen Lin]
+5713e69  Settings: Grab screen resolution drawables from cheetah-td1a.220804.031-factory-6152f6f3  [Sourajit Karmakar]
+77a1c03  Settings: Regulatory: Fullscreen instead of AlertDialog  [ReallySnow]
+047c068  Settings: Display 'Turbo charging' for Turbo charge in battery settings [2/2]  [Anushek Prasal]
+c9236f7  Settings: Display 'VOOC charging' for vooc charge in battery settings [2/2]  [Ali B]
+b151c2e  Settings: Display 'Warp charging' for warp charge in battery settings [2/2]  [Anushek Prasal]
+a59b8a0  Settings: Display 'Dash charging' for dash charge in battery settings [2/2]  [Nicolas Dhouailly]
+0dbe4a7  Settings: Use font configs instead fonts directly  [Pranav Vashi]
+b6b1a38  Settings: Fix up panel theme and layout  [Pranav Vashi]
+365e9e9  Settings: Add preference for resetting auto brightness adjustment  [LibXZR]
+703327d  Settings: Implement muting media volume on silent or vibrate mode  [LibXZR]
+ad3fa3e  Settings: add sim status listener in about phone  [hoffc]
+bc75acc  fuelgauge: Use Enhanced Battery Prediction from Turbo  [Joe Maples]
+5d29f4a  Battery: Implement background process killer [2/2]  [Dil3mm4]
+0305845  Settings: Introduce automated Sleep Mode [2/2]  [Anushek Prasal]
+5b37e81  Settings: tether: do not set shutdown timeout if <=0  [jhonboy121]
+5edcaf8  Settings: convert hotspot timeout preference to a list preference  [jhonboy121]
+e5a6a38  Settings: add TextView for summary into SeekBarDialogPreference  [cjybyjk]
+f0c609e  SoftAp: add client manager  [cjybyjk]
+2c6cba0  SoftAp: add support for setting shutdown timeout  [cjybyjk]
+3ce2975  SoftAp: add more bands to band preference  [cjybyjk]
+67131be  SoftAp: add back AP Band preference into tether settings  [cjybyjk]
+c375255  SoftAp: add Hidden SSID preference  [cjybyjk]
+0063307  Settings: Allow disabling screenshot shutter sound [2/2]  [maxwen]
+df9262c  Settings: Move Notch Cutout to Display  [shivatejapeddi]
+f66d0d7  Settings: Allow toggling floating rotation button [2/2]  [Ido Ben-Hur]
+32e8b89  Settings: Add window ignore secure feature [2/2]  [LibXZR]
+eedd25a  Link smallest width options in display settings  [Subhajeet Muhuri]
+47a5fae  Fix NullPointerException when renaming a fingerprint  [Xingbin Feng]
+73d6e5b  Settings: Add Updater  [Harry Youd]
+c772f13  Settings: Adjust gesture navigation settings title  [NurKeinNeid]
+e4fe923  Settings: Change back gesture height intervals  [Anushek Prasal]
+a58147c  Settings: Fix gestures saving parameters  [timjosten]
+c98984b  Settings: navigation mode settings [2/2]  [maxwen]
+00b604d  Settings: Add missing summary for Display size and text  [PainKiller3]
+99aaead  Changelog: Replace com.android.settingslib.collapsingtoolbar.R with com.android.settingslib.widget.R  [xyyx]
+e8cc14c  Changelog: Use NestedScrollView instead of ScrollView  [DennySPb]
+58e2e01  Changelog: Rework with Activity  [xyyx]
+6481de0  Changelog: fix possible title pattern mismatches  [Vol Zhdanov]
+0f52e7b  Changelog: use normal font instead of italic for commiter name  [Vol Zhdanov]
+4d40bbe  Changelog: Add left padding  [xyyx]
+6ba43ee  Settings: update changelog activity  [dadi11]
+8feda39  Changelog: Fix text selection with dot  [xyyx]
+60d9619  Changelog: clean and make themeable  [xyyx]
+fbdddaf  Changelog: prettify  [pcarenza]
+598a9ea  Settings: Changelog  [david]
+ba97349  Settings: Fix ringtone selection for devices with e-SIM  [jhenrique09]
+2d18e9e  MSIM Ringtone: Improve on devices with ESIM  [jhenrique09]
+e1cddbe  Settings: Use AOSP translations for MSIM ringtone  [jhenrique09]
+b167409  Settings: enable SIM card ringtone only if slot not empty  [maxwen]
+853c2f8  Settings: Phone ringtone setting for Multi SIM device [2/3]  [Ting Yu]
+7a02b16  Revert "[Wi-Fi] Remove 'Do not validate' option in CA certificate spinner"  [TogoFire]
+df03f09  Settings: Allow Customizing Nav Bars Radius [2/2]  [spkal01]
+eaefeca  DarkMode Settings: Use List Preference rather ugly Drop Down  [Pranav Vashi]
+4e0f12d  Settings: Utilize our AppListPreference with Sensor Blocking pref  [calebcabob]
+501cb14  Settings: BlockSensors: Fix/update the way Footer info is added  [calebcabob]
+fd64424  Settings: Make sensor block package list configurable [2/2]  [Hikari-no-Tenshi]
+b54a10c  Settings: Sensor block per-package switch [2/2]  [LorDClockaN]
+8166a93  Settings: Hide power menu on secure lockscreen [2/2]  [Altaf-Mahdi]
+9b6a811  Settings: Allow to hide arrow for back gesture [2/2]  [Nebrassy]
+105dbf8  settings: drop divider in dark mode screen  [V1t0rrr]
+3bf5712  Settings: add animation to dark mode preference  [dlwlrma123]
+4eaff88  Settings: Toggle the neutral overlay when we toggle dark bg  [Ido Ben-Hur]
+15ed38a  Settings: Add a black background toggle  [Ido Ben-Hur]
+12d6ff7  Settings: Randomize DerpSpace's summary  [Ido Ben-Hur]
+8539f44  Settings: Update Glide library  [NurKeinNeid]
+2327e1c  Add Glide library  [SagarMakhar]
+5223e9a  Clean expandable bottombar bits  [Shubham Singh]
+3f73ee3  Add CollapsingToolBar and and AppBar return methods  [SagarMakhar]
+2cac5ed  Build DerpSpace into Settings  [maxwen]
+c42a5a1  Settings: BatteryUsage: Drop unnecessary class  [ReallySnow]
+2fb6346  Settings: Fix battery usage chart irregular  [ReallySnow]
+7148456  Settings: Import reverse PowerUsage from Pixel stock  [ReallySnow]
+5388f3d  Settings: Add lockscreen rotation as an optional rotation setting  [Kelly]
+d9f4d7b  Settings: Statusbar brightness control [2/2]  [Danesh M]
+025d16c  Settings: Add missing animations for gestures and features  [Jason Edson]
+475e518  Settings: Add DND & Rate settings to flash on call [3/3]  [Ido Ben-Hur]
+5731150  Settings: Allow to flash on call only when entirely silent [3/3]  [Ido Ben-Hur]
+583b042  Settings: Add Flashlight blink on incoming calls [3/3]  [PMS22]
+e4bec75  Settings: Update all classes which inherit from TogglePreferenceController (12.1.0_r1)  [spezi77]
+de056ef  Settings: Improve force fullscreen settings fragment  [jhonboy121]
+36bca16  Settings: [2/2] Implement cutout force full screen  [jhenrique09]
+4fcaf52  AdaptivePlayback: Rename it to 'Smart Pause' to keep a better fluency  [Mesquita]
+14d14bf  Settings: Move "Adaptive Playback" option to Sound Settings.  [Mesquita]
+304df80  AdaptivePlayback: Add a intro text to the fragment  [Mesquita]
+82144bc  Settings: Introduce Adaptive Playback [2/2]  [Chris Crump]
+369d0c1  Settings: Toast icon switch [2/2]  [LorDClockaN]
+cb07436  Settings: Add kill button to notification guts [2/2]  [SpiritCroc]
+bd467d0  Less boring heads up option [2/2]  [ezio84]
+7194d47  Settings: Long press to copy wifi password  [Ido Ben-Hur]
+9d9100c  [SQUASH] Settings: Allow scheduling always on display [2/2]  [Ido Ben-Hur]
+4666cad  Settings: add option to enable AOD on charging only [2/2]  [darkobas]
+fa078f0  Settings: Align user avatar with homepage title  [jhonboy121]
+b52a3f5  Show user's Google avatar on the homepage  [Jason Edson]
+80aee68  Allow to suppress notifications sound/vibration if screen is ON [2/2]  [ezio84]
+680683c  Settings: DevicePicker: Adapt to S style  [ReallySnow]
+bb9ae23  Settings: Add option to cycle through ringer modes [2/2]  [rituj]
+f92430a  Settings: use mIsBatteryPresent for visibility of top level battery setting  [maxwen]
+3bab280  Settings: dont disable ls device controls based on secure lock  [maxwen]
+c5b536e  Settings: Add a preference to battery optimization page  [jhonboy121]
+fed0862  Settings: Optimize the selected WFD route preference summary  [hoffc]
+4d63e7c  Disable "SIM card lock" when the SIM card is PUK-blocked  [Mattias Nilsson]
+0954974  Settings: Update wallpaper dashboard summary to be inline with Pixels  [NurKeinNeid]
+ff0df11  Settings: Remove divider from Battery Manager  [Akash Srivastava]
+3bae322  NightDisplay Settings: Use List Preference for NightLight settings  [Akash]
+41e63e1  Settings: move app compatibility preference to apps and notifications  [rohan]
+2fb3b4e  AppInfo: Fix crash of settings if there is no play store installed  [00day0]
+d1ddc4a  Settings: Add missing android title for top_level_settings  [Renlord]
+99a3b77  WifiDisplaySettings: Fix some NPE  [Ido Ben-Hur]
+4cb0ba2  Settings: Drop custom preferenceFragmentCompatStyle  [LuK1337]
+7fa40bd  Settings: Address a memory leak  [dragonGR]
+bb2169a  Desktop backup password: Tint buttons to match system theme  [Alex]
+8368dba  SystemSettings: Remove all system / ota update items  [spezi77]
+7d532db  Settings: Make dashboard icons monetable  [NurKeinNeid]
+2814264  Settings: OverlayCategoryPreferenceController: Sort overlays by name  [Ido Ben-Hur]
+8ee483f  Settings: check isVoiceCapable for Calls&SMS category  [maxwen]
+87b8a9d  Settings: Hide radio info if device don't support voice  [LynnrinChan]
+212f378  Settings: Expose radio info (*#*#4636#*#*)  [xyyx]
+4363e8b  Settings: remove LiveDisplay if not supported  [Ali B]
+3f6e8cb  BatteryPercentagePreferenceController: Force hide for all devices  [jhenrique09]
+d958af4  Settings: Migrate interstitial encryption settings xml to NestedScrollView.  [Quallenauge]
+1ef2241  Settings: allow changing the length of gesture navbar[2/2]  [jhonboy121]
+9031f15  Remove the "About phone" avatar.  [Alex Cruz]
+c7bedb0  Settings: Implement lockscreen quick unlock [2/2]  [Hikari-no-Tenshi]
+121a478  Settings: check wifi direct feature for showing preferences  [maxwen]
+be8542e  Settings: Enable Quick Wallet settings for all devices with NFC  [xyyx]
+bc04367  Settings: Whitelist WRITE_DEVICE_CONFIG permission  [saikiran2001]
+78d9846  InstalledAppDetails: fix refreshing storage summary after force stop  [Altaf-Mahdi]
+bee4e1c  Settings: add more controllers to calc gesture visibility  [maxwen]
+67e609c  Settings: stop logspill from ProcessStats  [maxwen]
+fa9fc02  Settings: buttons text should no longer be allCaps  [maxwen]
+ecc118b  Settings: Show me more than 4 items in the menus!  [Dan Cartier]
+ccf8f50  Notification log improvements  [maxwen]
+52314d7  Expose the notification log  [Alex]
+7b31b08  Settings: Use MD2 icon for Playstore  [AshutoshSundresh]
+8b076a0  AppInfo: Only add Playstore action if Playstore is installed  [AshutoshSundresh]
+e1a9e89  InstalledApp: show link to Google Play  [George G]
+4be3f51  Open app when clicking on icon in App Info  [deadman96385]
+1133025  Settings: Improve code for time spent in app  [Jyotiraditya Panda]
+82c2e58  AppInfo: Add time spent in app from Wellbeing  [Jason Edson]
+b1328f9  SELinux info: Set settings:enableCopying to true  [Subhajeet Muhuri]
+25af71f  Add back SELinux info  [Stephen Smalley]
+5531937  Settings: Observe auto brightness mode changes  [Ido Ben-Hur]
+aff64ef  Settings: Configurable 0, 90, 180 and 270 degree rotation [2/2]  [kufikugel]
+c01c79e  Settings: Fixup start padding for battery usage graph  [Adithya R]
+5cf23b5  Toast insulter: Add more insults  [Joey Huab]
+37dd6d1  Developer options toast insulter  [Alex Cruz]
+a1d5d95  Settings: Fix loading iconpack-based Wellbeing icon  [Adithya R]
+48c48a8  Settings: Fix Android Beam switch bar content  [LibXZR]
+ad53faa  DisplaySettings: font size in 5% steps from 80% to 130%  [Jean-Pierre Rasquin]
+e6003bb  Settings: Import missing lottie animations  [Adithya R]
+063e082  Make kernel version clickable  [SagarMakhar]
+68a98c1  Settings: Change kernel preference behavior  [Alex]
+7160cc2  Settings: Show full proc/version information  [xoomdev]
+d3ae354  Use BUILD.VERSION.INCREMENTAL for search index check  [maxwen]
+a2ba2b9  Settings: Remove duplicate build number from firmware dialogue  [Josh Fox (XlxFoXxlX)]
+9f939fa  Settings: Disable all bugreport settings  [maxwen]
+9634881  Ignore custom app space management activities  [Danny Lin]
+2d84674  Remove app uninstall and disable confirmation dialogs  [Danny Lin]
+0940b6f  Unlock mobile network settings when airplane mode is on  [Danny Lin]
+e08cdb8  Expand abbreviation in average memory usage string  [Danny Lin]
+eadc4db  Settings: Comment out Legal/Regulatory category  [jhenrique09]
+57f17fe  Settings: IS_DEBUGGABLE -> IS_ENG  [jhenrique09]
+fcf5bd1  Add back arrow to Desktop backup password  [Alex Cruz]
+da596b0  QS dev tiles: Don't set them to active area  [Alex Cruz]
+aa26cc0  WiFi: Remove country code checking  [xyyx]
+7c86564  Remove feedback and bug report stuff  [ezio84]
+55e0214  Remove the Automatic ota check option but be sure it's disabled  [ezio84]
+528e487  Comment out Legal/Regulatory info  [Corey Edwards]
+c43baea  Settings: Hide|disable "Phone number" from About phone information  [kubersharma001]
+8a02c39  DevelopmentSettings: Disable automatic updates  [Henrique Silva]
+e943100  Revert "Add setting for showing the vibrate icon in status bar"  [Adithya R]
+1187ae9  Settings: switch to 3-button navigation when disabling navbar  [Timi Rautamäki]
+4d26f33  Settings: Move blur toggle to Display options.  [Jyotiraditya]
+c7780aa  Settings: Allow to skip confirmation in biometric auth dialog [2/2]  [cjh1249131356]
+f987515  Settings: Disable face enroll on Setup Wizard  [jhenrique09]
+2248fc3  [2/2] Allow changing face unlock method when locked  [jhenrique09]
+b01cfee  Settings: Allow using face as auth method for apps  [jhenrique09]
+0410d2a  Initial import of Face Unlock for T  [jhenrique09]
+d8eecf8  ButtonSettings: Add "Enable taskbar" toggle  [LuK1337]
+a7d9621  Add a toggle for panic power button option  [Erfan Abdi]
+c86a69d  Work profile lock settings will now affect the active managed profile  [t-m-w]
+28aee30  Settings: Add support for parallel space  [LibXZR]
+67761a3  Settings: Introduce App Lock [2/3]  [jhonboy121]
+338cee5  Settings: Add Game Space support  [Nauval Rizky]
+5a83ed5  Settings: Add three-fingers-swipe to screenshot [2/2]  [ghbhaha]
+da410af  Settings: Add a toggle for QS quick pulldown [2/2]  [Adithya R]
+a779181  battery usage UI: use a fallback name for unknown components  [Dmitry Muhomor]
+7627acc  Settings: Add pocket lock toggle  [Chris Lahaye]
+c738300  Settings: add a disclaimer for our imp for per-app volume  [El Dainosor]
+4ac4ffc  AppVolumeSlice: Allow querying icon of apps installed by any user  [cjybyjk]
+a580746  Settings: support per-app volume [3/3]  [cjybyjk]
+e4fc6c8  Settings: Change text color of notification light speed settings  [Arian]
+b378a8e  Settings: Add back battery and notification lights settings  [Sam Mortimer]
+494b8e7  Implement notificationlight settings  [Erfan Abdi]
+1b88a28  Settings: Add toggle for heads up notifications  [Michael Bestas]
+1ff692a  Use AOSP string for side fps enrollment  [Michael Bestas]
+b5ac1b7  Settings: Redo "Good news, `encryptable=footer` is broken"  [Michael W]
+9398a1e  KeyboardSettings: Add a RemotePreference for device-specific panel  [Bruno Martins]
+c66cd40  Implement LongScreen settings  [Erfan Abdi]
+0f8f0b2  Settings: Allow user configurable fingerprint wake-and-unlock  [althafvly]
+6d7823e  fixup! Settings: Allow toggling screen off fod [2/2]  [A Big Salty Fish]
+a594012  Settings: Allow toggling screen off fod [2/2]  [jhonboy121]
+bf4510a  Settings: Make NetworkScanHelper max search time customizable  [LuK1337]
+4b1c241  Settings: Add preference for one shot auto-brightness  [Cédric Bellegarde]
+e7af76b  Settings: Allow using legacy VPN types  [Alessandro Astone]
+ce7f17d  Settings: Move touch prefs to correct folder  [jhenrique09]
+8b98655  Settings: Display: Add High Touch Polling Rate Support  [Ramii Ahmed]
+0c3c132  fingerprint: hide link icon when there's no link  [Timi Rautamäki]
+f60719d  Settings: Rework fingerprint enrollment screen  [Bruno Martins]
+38df275  Settings: Add FastCharge preference into Battery settings  [Bruno Martins]
+89e53d2  Settings: Add an option to force pre-O apps to use full screen aspect ratio  [Jesse Chan]
+06e0d09  Settings: display: Add wake on plug switch  [Jon Evans]
+c4b26d1  LiveDisplay: Use AOSP preview images  [Erfan Abdi]
+a592d8e  Settings: Introduce LiveDisplay settings  [Erfan Abdi]
+a2af224  Settings: Use MD2 icon for Phone Msg  [chandu078]
+4486f2f  Settings: Use MD2 icon for call  [chandu078]
+e5d14af  Settings: Use MD2 icon for Private DNS  [chandu078]
+24d2ca6  Settings: Added missing icons in network and internet menu  [kleidione Freitas]
+743bae0  Power menu styles: Initial checkin for T [2/2]  [nift4]
+cbec577  Settings: Buttons: Implement power menu actions settings  [Erfan Abdi]
+5d8d84d  ButtonSettings: Remove kill app action  [NurKeinNeid]
+e9a231d  ButtonSettings: Remove split screen action  [jhenrique09]
+5347e03  Implement button settings  [jhenrique09]
+d434622  Settings: Add permissions for lineagehw  [jhenrique09]
+11082f9  Settings: Add setup UI for minimum delay between an app's notification sounds  [Danny Baumann]
+1afa4d1  Settings: Add proximity check on wake preference  [Bruno Martins]
+f050590  Settings: Add high touch sensitivity and touchscreen hovering toggles  [LuK1337]
+81c5deb  AppDataUsage: Handle apps without INTERNET permission  [Oliver Scott]
+967739d  Settings: Add support for allowing/disallowing apps on cellular, vpn and wifi networks  [Oliver Scott]
+77786db  Settings: Add support for allowing/disallowing apps on restricted networks  [Sam Mortimer]
+6c024cc  Settings: Add option to scramble pin layout when unlocking (1/2).  [Adnan]
+e8a26f0  Settings: Add toggle for 60Hz refresh rate on battery saver  [Adithya R]
+6faf98c  Settings: Add preferences for min/max/preferred refresh rate  [LuK1337]
+e2c95ac  Settings: Only show gesture navigation if device has a software nav bar  [Rashed Abdel-Tawab]
+e4ee16b  Settings: Allow devices to provide remote gesture preferences  [Bruno Martins]
+7f01314  Settings: Add preference for TouchGestures  [Anushek Prasal]
+db1243a  Remove useless USB page header  [Michael Bestas]
+61d660f  Settings: Add double tap to sleep preference  [Rashed Abdel-Tawab]
+61665f2  get outer NFC preference to listen for changes  [inthewaves]
+545973b  Fix inconsistent USB preference screen title  [Danny Lin]
+0264065  Don't change nouns in summaries to lower case for German  [Danny Baumann]
+002a2d9  Settings: Update package details to match S style  [Mukul Dhir]
+73980e7  Settings: Add package name to installed app details  [Luca Stefani]
+ae79056  Allow sorting Applications by size  [Roman Royer]
+a6909cb  Settings: Add support for hiding navigation bar under screen keyboard [2/3]  [LibXZR]
+a0f0cc9  Settings: Implement hide gestural navigation hint bar [2/3]  [Jesse Chan]
+d6da4f4  Settings: Add hotspot setting to allow VPN upstreams [3/3]  [Sam Mortimer]
+21652e1  Add toggle to enable ADB root  [Luca Stefani]
+026cc6b  Settings: Incall vibration options [3/3]  [Mohammad Hasan Keramat J]
+
+
+* packages/modules/Wifi
+769e56f  Increase 5 GHz network signal tolerance  [Danny Lin]
+
+
+* packages/services/Telecomm
+d9a015f  InCallController: use click & double click effect for connect and disconnect  [jhonboy121]
+034d335  Ringer: match simple vibration pattern and amplitude array length  [jhonboy121]
+9308de0  Telecomm: Update vibration patterns  [rituj]
+6190e0f  [SQUASH] Telecomm: Allow choosing a custom vibration pattern [2/3]  [Ido Ben-Hur]
+d8ae658  Telecomm: Add vibration patterns from OOS [2/3]  [rituj]
+d9609d3  Telecomm: Phone ringtone setting for Multi SIM device [3/3]  [Ting Yu]
+8280359  Telecomm: Squashed phone_type switch support  [Bruno Martins]
+867609d  Fix few issues with Blink with call  [Pranav Vashi]
+ac2f436  Telecomm: Add DND & Rate settings to flash on call [2/3]  [Ido Ben-Hur]
+bb3b4cf  Telecomm: Allow to flash on call only when entirely silent [2/3]  [Ido Ben-Hur]
+bca12c8  Telecomm: Add Flashlight blink on incoming calls [2/3]  [Shripal17]
+02745b8  CallLog: Get rid of warning  [Michael W]
+de92acd  Add back increasing ring feature (1/3).  [Danny Baumann]
+83ddd07  Incall vibration options [2/3]  [beanstown106]
+
+
+* vendor/derp
+1a6eb5a  Revert "config: device_framework_matrix: Remove trust hal entry"  [NurKeinNeid]
+
+
+* vendor/overlay
+863552f  DarkBgOverlay: Turn more color components to black  [NurKeinNeid]
+
+
+* vendor/qcom/opensource/power
+72081c9  power: Cancel the previous boost after calling a new one  [Vladimir Mikhailov]
+
+
+
+
+====================
     01-07-2023     
 ====================
 
