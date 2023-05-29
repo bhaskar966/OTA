@@ -1,3 +1,199 @@
+===============
+   29-5-23
+===============
+
+
+
+**Device Side
+sweet : overlay: Increase status bar top padding
+sweet: Build missing omx libs
+sweet: Add newly added blobs to public.libraries.txt
+sweet: Add some missing blobs
+sweet: Remove discard command tuning
+sweet: overlay: Disable NearbyMessagingService
+sweet: overlay: Disable DiscoveryService
+sweet: Set correct manufacturer
+sweet: overlay: Disable subtle tick vibration when revealing shelf
+sweet: Update Adreno to LA.UM.9.14.r1-21000-LAHAINA.QSSI13.0
+sweet: Update DPM, IMS, and RIL system blobs
+sweet: Import missing blobs
+And many more underwood changes
+
+**Source Side
+
+====================
+    05-28-2023     
+====================
+
+* frameworks/base
+3a79761  Merge branch 'DerpFest-AOSP:13' into miuicamera  [bhaskar966]
+3b5a206  Hide hidden apps from all apps except system  [Oliver Scott]
+606d744  Add pointer capture callback  [nift4]
+d8087f0  fixup! Configurable 0, 90, 180 and 270 degree rotation  [Michael Bestas]
+6a61477  services: fix weird launcher3 crash  [nift4]
+04498fe  SystemUI: fix tuner enabling aod on first open  [nift4]
+5fa4e91  wm: hacky fix for system_server crash  [nift4]
+003ef82  SystemUI: fix multi-display gesture arrow  [nift4]
+e9854b1  wm: Fix menu in legacy apps with multiple activities  [nift4]
+679adff  wm: do not show keyguard windows when mirroring due to dream  [nift4]
+00158bd  fixup! wm: block task transitions from displaying in freeform  [nift4]
+50dbb15  wm: never consume statusbar in freeform mode  [nift4]
+61d628d  wm: block custom activity transit animations  [nift4]
+93f0e7e  wm: block task transitions from displaying in freeform  [nift4]
+361bf0c  wm: add freeform-compatible activity transition animation  [nift4]
+5035d41  wm: support freeform-specific animation overrides  [nift4]
+f2fe7a2  [SQUASH] Custom QS panel styles [1/3]  [StarkDroid]
+02c7aa7  [SQUASH] SystemUI: Improve QS styles  [str-br]
+e9393ac  SystemUI: Link style elements to config_dialogCornerRadius  [Pranav Vashi]
+8d699f1  fwb: Link more elements to `config_dialogCornerRadius `  [minaripenguin]
+ac8f500  SystemUI: Stop using marquee on qs tiles label  [str-br]
+f4605be  SystemUI: Prevent systemui crash when reinflating QS  [minaripenguin]
+ffc7838  SystemUI: Allow to change QS tile label text size [1/2]  [Pranav Vashi]
+554565e  SystemUI: Update and fix QS tile layout settings  [Pranav Vashi]
+0b6bd4a  SystemUI: Improve vertical QS tile layout & animation  [timjosten]
+c3366e7  SystemUI: Tune QS tile dimensions  [strwbrry143]
+deca9ae  SystemUI: Fix qs tile vertical layout scrolling  [minarypenguin]
+4cf2ca5  SystemUI: Add QS tile layout settings [1/2]  [maxwen]
+ffbea0e  SystemUI: Import more QS Header resources [1/2]  [Idc]
+0ba0fe8  SystemUI: show ime switcher + cursor keys if we have space  [nift4]
+427fd06  Porting menu button from pie to new pipeline  [nift4]
+139f770  wm: Fix menu only opening once on legacy apps  [nift4]
+313f6f4  SystemUI: bring back clipboard navbar button  [nift4]
+8bd82a6  SystemUI: support navbar surface drag-n-drop [1/2]  [nift4]
+8604990  wm: rewrite/fix window change animation  [nift4]
+8e75405  SystemUI: fix freeform transition visual issue  [nift4]
+9ac9c90  SystemUI: fix transparent navigation bar keys in secondary display  [nift4]
+d84b388  fixup! Allow disabling pointer acceleration  [nift4]
+f3b3f71  SystemUI: fix race condition in ScreenshotController  [nift4]
+51cc91a  Force mouse event as touch [1/2]  [nift4]
+96c9599  fixup! Allow disabling pointer acceleration  [nift4]
+b672e75  Do not backup APKs that do not have `allowBackup` attr on it's manifests  [minaripenguin]
+0da90fa  prevent crash with pin protected user and taskview  [Carsten Rohn]
+666b62c  PixelPropsUtils: Update from May release  [NurKeinNeid]
+1601f03  SystemUI: add acun and bang brightness slider [1/3]  [Ghosuto]
+
+
+* frameworks/native
+4d6623f  fixup! inputflinger: add absolute mouse input support  [nift4]
+
+
+* packages/apps/DerpSpace
+8776a32  DerpSpace: add acun and bang brightness slider [2/3]  [Ghosuto]
+7275ede  Revert "DerpSpace: Lock screen clock top margin settings [2/2]"  [NurKeinNeid]
+5c512ae  Revert "DerpSpace: Lockscreen text size settings [2/2]"  [NurKeinNeid]
+5fdca65  DerpSpace: Custom QS panel styles [3/3]  [StarkDroid]
+
+
+* packages/apps/Settings
+eb09f3f1  Settings: Update Glide library to 4.15.1  [NurKeinNeid]
+
+
+* vendor/overlay
+6c71e1b  overlays: add acun and bang brightness slider [3/3]  [Ghosuto]
+099d77f  overlays: Add more Brightness Slider from Iconify [3/3]  [rdx420]
+432d706  overlays: Fix brightness Slider Styles  [rdx420]
+ccaf95f  overlays: don't allow backup  [NurKeinNeid]
+
+
+* vendor/qcom/opensource/commonsys-intf/display
+697709f  Revert "gralloc: Fix integer overflow in roundUpToPageSize"  [bhaskar966]
+
+
+====================
+    05-27-2023     
+====================
+
+* frameworks/av
+af85cc4  camera: Expose aux cameras in third party apps  [Pierre-Hugues Husson]
+9b21f69  camera2 vndk: Improve error handling  [Emilian Peev]
+624eb81  Camera: Avoid roundBufferDimensionsNearest also for HAL_PIXEL_FORMAT_BLOB  [SGCMarkus]
+744b807  Camera: Call corresponding unlock for every lockAsync  [Shuzhen Wang]
+a42e357  libstagefright: Allow HFR-60 in HAL-3 recording  [Manikanta Kanamarlapudi]
+d1cf5fd  Camera: Add support for manual 3A.  [Peng Zhu]
+335799c  camera: Workaround for GCC-compiled HAL3 drivers  [Steve Kondik]
+69e29a1  libcameraservice: Add support for miui camera mode  [Adithya R]
+640fcbd  camera: include: Don't override possible overlayed header  [Bruno Martins]
+5df7eb5  libstagefright: Support YVU420SemiPlanar camera format  [Ethan Chen]
+
+
+* frameworks/base
+55eb9ee  Camera: Prevent crash with prebuilt camera metadata  [Pranav Vashi]
+3e4eed0  Camera: Avoid possible NPE after extension session configuration  [Emilian Peev]
+87d4a03  camera: Add backwards-compatible CaptureResultExtras constructor  [Adithya R]
+75dc9ff  stop enforcing camera sound for certain carriers  [Daniel Micay]
+7ae559d  camera2: Add methods for backward compatibility  [Ihor Ivanov]
+1df3384  Camera: Fix size list parceling  [Emilian Peev]
+b33b044  Add config overlay to force enable multi resolution for camera  [Pranav Vashi]
+7b59ad6  CameraManager: HAX for depth sensor on ginkgo [1/2]  [Adithya R]
+e66b227  Camera: Clearing exception for Extended Face  [Sauhard Pande]
+fd08e80  Camera: Extend face detection  [Shuzhen Wang]
+bb384f7  Guard in short-circuit evaluations for stringSplit methods.  [Mohammed Irfan]
+1dc03bb  fixup - Camera: Ignore torch status update for aux or compsite camera  [jhenrique09]
+21c704e  Camera: Ignore torch status update for aux or compsite camera  [Gaoxiang Chen]
+e19129a  Fix Photosphere/Camera FCs  [Jostein Kjønigsen]
+4f0eccf  Allow sending vendor- or device-specific commands to the camera HAL.  [Danny Baumann]
+bf4d688  Camera2: Notify fps as Session Based Parameter  [Sauhard Pande]
+7c7484f  Camera: Don't throw exceptions when value pairs have spaces in them  [Ricardo Cerqueira]
+5d6a6fa  camera: Allow selected camera apps to skip unconfigure  [LuK1337]
+
+
+* vendor/derp
+420550b  Generate build info for Unofficial Builds only  [bhaskar966]
+7c69881  Merge pull request #35 from yograjfire18/13  [Alexander Brunswig]
+87b8bfb  devices: Add spartan (realme GT Neo 3T)  [yograjfire18]
+
+
+====================
+    05-26-2023     
+====================
+
+====================
+    05-25-2023     
+====================
+
+* packages/services/VncFlinger
+ddaa568  prepare for pointer capture  [nift4]
+
+
+====================
+    05-24-2023     
+====================
+
+* external/unrar
+33790f0  unrar: Remove CleanSpec.mk  [Michael Bestas]
+
+
+* frameworks/base
+3d4c939  services: fix weird launcher3 crash  [nift4]
+06f2537  SystemUI: fix tuner enabling aod on first open  [nift4]
+90e6246  wm: hacky fix for system_server crash  [nift4]
+d349092  SystemUI: fix multi-display gesture arrow  [nift4]
+0a7efc9  wm: Fix menu in legacy apps with multiple activities  [nift4]
+
+
+* packages/apps/DerpLauncher
+17c74b5  Revert "quickstep: return if recentsView is null"  [minaripenguin]
+d4b28f4  DerpLauncher: fix crash  [nift4]
+d690057  DerpLauncher: Fix monkey crash in RecentsLaunchAnimator  [Anle Pan]
+0c95d54  DerpLauncher: Fix crash in SurfaceTransactionApplier  [Shen Lin]
+9def086  DerpLauncher: ui: Fix premature short-circuit on end spring anim  [Dan Choi]
+db17fff  DerpLauncher: Fix potential ConcurrentModificationException  [Shen Lin]
+739f2ac  DerpLauncher: Fix a potential NPE when buildAnimationController is called  [Shen Lin]
+ecbd295  DerpLauncher: AppsSearchContainerLayout: Avoid NPE  [Dil3mm4]
+
+
+* packages/apps/Settings
+e32cba9  Settings: Show battery saver refresh rate toggle with smooth display as well  [Adithya R]
+
+
+* packages/modules/adb
+d1e9657  adb_root: Simplify the way we parse enabled state file  [nift4]
+
+
+===============
+   19-2-23
+===============
+
 **Device Side
 sweet: Update the s5kgw3 camera libraries from MIUI V13.0.9.0.SKFINXM
 sweet: Drop xiaomi touchfeature hal
